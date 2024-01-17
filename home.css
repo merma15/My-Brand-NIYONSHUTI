@@ -90,6 +90,24 @@ body {
    text-decoration: none;
 }
 
+/* styles.css */
+
+.search-form {
+   display: flex;
+}
+
+.search-button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.search-input {
+   border: 3px solid #ccc;
+   border-radius: 15px;
+}
+
+
 /*Styling Hero-Section*/
 .hero-section {
    display: flex;
@@ -98,6 +116,228 @@ body {
    align-items: flex-start;
    align-self: stretch;
 }
+
+.navigation-bar {
+   display: flex;
+   padding: 8px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 24px;
+   position: absolute;
+   left: 65px;
+   top: 250px;
+   border-radius: 40px;
+   border: 1px solid var(--White, #FFF);
+   background: var(--BG-2, #1A1E23);
+}
+
+.navigation-bar li {
+   list-style: none;
+}
+
+
+.container-hero {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 64px;
+   flex: 1 0 0;
+}
+
+.title-prof {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.professional-title {
+   color: var(--Brand-2, #98FAEC);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 134px;
+   /* 134% */
+   text-transform: capitalize;
+}
+
+.hero-message-container {
+   display: flex;
+   padding: 0px 128px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   gap: 64px 128px;
+   align-self: stretch;
+   flex-wrap: wrap;
+}
+
+.hero-message-container-left {
+   display: flex;
+   width: 315px;
+   height: 489px;
+   padding: 24px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 32px;
+   border-radius: 160px 0px;
+   border: 4px solid var(--White, #FFF);
+   background: var(--BG-1, #292F36);
+   box-shadow: -4px -4px 2px 0px #12F7D6;
+}
+
+.main-hero-container {
+   display: flex;
+   width: relative;
+   height: relative;
+   flex-direction: column;
+   align-items: center;
+   gap: 32px;
+   flex-shrink: 0;
+}
+
+#profile-picture {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+   width: 202px;
+   height: 190px;
+}
+
+.texts-list {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 16px;
+}
+
+#programming-list ul {
+   display: flex;
+   align-items: flex-start;
+   gap: 16px;
+}
+
+#programming-list li {
+   list-style: none;
+   color: var(--BG-1, #292F36);
+   background-color: #12F7D6;
+   padding: 0 5px;
+   font-size: 14px;
+   border-radius: 5px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 18px;
+   /* 128.571% */
+}
+
+.button-cv {
+   display: flex;
+   padding: 10px 15px;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   border-radius: 25px;
+   background: var(--White, #FFF);
+}
+
+input[type="button"] {
+   border: 5px solid #FFFFFF;
+}
+
+#profile-picture img {
+   width: 96px;
+   height: 96px;
+   flex-shrink: 0;
+   border-radius: 48px;
+   border: 3px solid #12F7D6;
+}
+
+.photo-name {
+   color: var(--White, #FFF);
+   /* Logo-M */
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 42px;
+   margin-bottom: 0;
+   text-transform: capitalize;
+}
+
+.title {
+   color: var(--White, #FFF);
+   text-align: center;
+   padding-top: 0;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 18px;
+   /* 128.571% */
+}
+
+.welcoming-header {
+   display: flex;
+   height: 240px;
+   flex-direction: column;
+   align-items: flex-start;
+   align-self: stretch;
+}
+
+.welcoming-message-title li {
+   list-style: none;
+}
+
+.welcoming-paragraph {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 16px;
+   align-self: stretch;
+}
+
+.welcoming-message-paragraph {
+   color: var(--White, #FFF);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   /* 125% */
+   text-transform: capitalize;
+}
+
+.programming-highlights {
+   display: flex;
+   width: 218px;
+   padding: 48px 32px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 48px;
+   border-radius: 80px;
+   background: var(--BG-2, #1A1E23);
+   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#programming-languages {
+   display: flex;
+   width: 176px;
+   align-items: center;
+   gap: 16px;
+}
+
+#dev-tools {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+#year-experience {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
 
 
 /* Styling a Footer */
