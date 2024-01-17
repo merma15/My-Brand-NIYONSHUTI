@@ -38,4 +38,39 @@ This project is a personal website built to showcase your skills, experiences, a
    ```bash
    git clone https://github.com/your-username/personal-website.git
 
+2. Open `index.html` in a web browser to view the website locally.
+
+## Structure
+
+The project structure is organized as follows:
+
+- `index.html`: Home page
+- `about.html`: About Me page
+- `portfolio.html`: Portfolio/Work page
+- `contact.html`: Contact Me page
+- `css/`: CSS stylesheets
+
+## Customization
+
+Qw will customize the content in the HTML files and modify the styles in the CSS files to match your preferences and personal branding.
+
+## Deployment
+
+Host the website on platforms like GitHub Pages, Netlify, or any other hosting service of your choice.
+
+## Contributing
+
+If you have suggestions or improvements, please create a pull request. Contributions are welcome!
+
+## License
+
+This project is licensed under the MugaboTech License(LICENSE).
+
+## Acknowledgments
+
+- Thanks to NIYONSHUTI Martin for inspiration and guidance.
+
+## Contact
+
+For any inquiries or feedback, please contact aimemartin018@gmail.com
 
