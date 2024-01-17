@@ -36,7 +36,7 @@ This project is a personal website built to showcase your skills, experiences, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/personal-website.git
+   git clone https://github.com/merma15/My-Brand-NIYONSHUTI.git
 
 2. Open `index.html` in a web browser to view the website locally.
 
