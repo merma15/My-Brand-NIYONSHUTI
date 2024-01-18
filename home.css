@@ -12,6 +12,8 @@ body {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   width: 100%;
+   height: auto;
 }
 
 /* Styling The Header */
@@ -101,6 +103,7 @@ body {
 
 /* Styling Hero-Section */
 .hero-section {
+   height: 900px;
    display: flex;
    padding: 64px 128px 128px 128px;
    justify-content: center;
@@ -134,6 +137,7 @@ body {
 
 
 .hero-section-container {
+   width: 500px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -159,7 +163,7 @@ body {
 }
 
 .hero-message-container {
-   width: 1200px;
+   width: 200px;
    height: 700px;
    display: flex;
    padding: 0px 128px;
@@ -167,7 +171,7 @@ body {
    align-items: center;
    align-content: center;
    gap: 64px 128px;
-   flex-direction: row;
+
 }
 
 .hero-message-container-left {
@@ -186,16 +190,6 @@ body {
    margin-right: 10px;
 }
 
-
-.main-hero-container {
-   display: flex;
-   width: 275px;
-   height: 377px;
-   flex-direction: column;
-   align-items: center;
-   gap: 32px;
-   flex-shrink: 0;
-}
 
 #profile-picture {
    width: 202px;
@@ -306,58 +300,9 @@ input[type="button"] {
    border: 5px solid #FFFFFF;
 }
 
-.welcome-message {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   padding: 50px;
-   background-color: #292F36;
-   color: #FFFFFF;
-}
-
-#welcome-header h1 {
-   margin: 0;
-   font-size: 36px;
-   font-weight: bold;
-   line-height: 1.2;
-}
-
-#welcome-header strong {
-   color: #12F7D6;
-}
-
-#welcome-paragraph {
-   margin-top: 20px;
-}
-
-#welcome-paragraph p {
-   font-size: 18px;
-   line-height: 1.6;
-}
-
-#welcome-paragraph h2 {
-   margin-top: 20px;
-   font-size: 24px;
-   font-weight: bold;
-   color: #12F7D6;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-#welcome-paragraph h2 img {
-   margin-left: 10px;
-   width: 20px;
-   /* Adjust as needed */
-   height: 20px;
-   /* Adjust as needed */
-}
-
 
 .welcome-message {
-   width: 900px;
+   width: 1000px;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -365,9 +310,9 @@ input[type="button"] {
 }
 
 #welcome-header {
+   width: 400px;
    display: flex;
-   height: 100px;
-   padding: 0px 16px;
+   height: 300px;
    flex-direction: column;
    align-items: flex-start;
    flex-shrink: 0;
@@ -390,10 +335,9 @@ input[type="button"] {
    font-weight: 400;
    line-height: 20px;
    text-transform: capitalize;
-   text-transform: capitalize;
 }
 
-.welcome-paragraph h2 {
+#welcome-paragraph h2 {
    font-size: 32px;
    font-style: normal;
    font-weight: 500;
@@ -430,19 +374,22 @@ input[type="button"] {
 
 /* About Me Section */
 .about-me {
+   width: 100%;
    display: flex;
+   padding: 128px;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 128px;
    align-self: stretch;
-   padding: 128px;
-   border-radius: 16px;
-   background: url("/brand-images/about-me-background.jpg"), #1a1c1c 50% / cover no-repeat;
+   background: url("/brand-images/about-me-background.jpg"), center/cover no-repeat;
+   background-color: rgba(12, 12, 12, 00);
 }
 
 #vector-arrows {
    display: flex;
+   height: 140px;
+   width: 80%;
    flex-direction: column;
    align-items: center;
    gap: 64px;
@@ -459,13 +406,12 @@ input[type="button"] {
 
 .about-me-container {
    display: flex;
+   padding: 0px 64px 0px 128px;
    justify-content: center;
    align-items: center;
    align-content: center;
    gap: 128px;
    align-self: stretch;
-   padding: 0px 64px 0px 128px;
-   flex-wrap: wrap;
 }
 
 #about-me-message {
@@ -473,6 +419,15 @@ input[type="button"] {
    flex-direction: column;
    align-items: flex-start;
    gap: 64px;
+}
+
+#about-me-message h3 {
+   display: flex;
+   padding: 16px 40px;
+   align-items: flex-start;
+   border-radius: 40px 0px;
+   border: 4px solid var(--Brand-1, #12F7D6);
+   background: var(--BG-1, #292F36);
 }
 
 #about-me-title,
@@ -497,7 +452,348 @@ input[type="button"] {
 #about-me-pictures img {
    width: 462px;
    height: 556px;
-   border-radius: 16px;
+}
+
+/*Sytling Skills Section*/
+.skills {
+   display: flex;
+   padding: 128px;
+   flex-direction: column;
+   align-items: center;
+   gap: 248px;
+   align-self: stretch;
+   background: url("/brand-images/skills-image.png"), center/cover no-repeat;
+   background-color: rgba(19, 19, 19, 0.1);
+}
+
+.skills-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+.skilss-module {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+#skills-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+   align-self: stretch;
+}
+
+#skills-header h1 {
+   color: var(--Brand-1, #12F7D6);
+   font-family: Ubuntu;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 72px;
+   text-transform: capitalize;
+}
+
+.main-skills-container {
+   display: flex;
+   width: 1222px;
+   flex-direction: column;
+   align-items: center;
+   gap: 90px;
+}
+
+#skills-services {
+   display: flex;
+   width: 720px;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 128px;
+}
+
+.services-2 {
+   display: flex;
+   width: 291px;
+   height: 132px;
+   padding: 16px 24px 15px 24px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-shrink: 0;
+   border-radius: 2px;
+   background: #98FAEC;
+}
+
+.services-1 {
+   display: flex;
+   width: 288px;
+   padding: 16px 24px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   flex-shrink: 0;
+   border-radius: 0px 8px 8px 0px;
+   background: var(--Brand-2, #98FAEC);
+}
+
+#color {
+   display: flex;
+   width: 8px;
+   height: 132px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   flex-shrink: 0;
+   border-radius: 8px 0px 0px 8px;
+   background: var(--CSS, #0C73B8);
+}
+
+.services-1 img,
+.services-2 img {
+   width: 32px;
+   height: 32px;
+   border-radius: 70px;
+   border: 1px solid #12F7D6;
+}
+
+.services-1 h4,
+.services-2 h4 {
+   color: #1A1E23;
+   text-align: center;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   text-transform: uppercase;
+}
+
+.services-1 h1,
+.services-2 h1 {
+   color: var(--BG-1, #292F36);
+   text-align: center;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 32px;
+   text-transform: capitalize;
+}
+
+
+#programming-skills ul {
+   display: flex;
+   width: 121.54px;
+   height: 122.88px;
+   padding: 0px 0.003px 0px 0.007px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-shrink: 0;
+}
+
+#programming-skills li {
+   list-style: none;
+}
+
+/*Styling Works*/
+.works {
+   display: flex;
+   padding: 128px;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+   background: url("/brand-images/works-background-image.png") center/cover no-repeat;
+   background-color: rgba(19, 19, 19, 0.7);
+}
+
+#works-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+#works-header h1 {
+   color: var(--Brand-1, #12F7D6);
+   font-family: Ubuntu;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 72px;
+   text-transform: capitalize;
+}
+
+#works-header p {
+   color: var(--White, #FFF);
+   text-align: center;
+   font-family: "IBM Plex Mono";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   /* 125% */
+   text-transform: capitalize;
+}
+
+.main-works-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 64px;
+}
+
+.main-works-container img {
+   width: 297px;
+   height: 171px;
+   flex-shrink: 0;
+}
+
+/*Styling Blog Section*/
+.blogs {
+   display: flex;
+   padding: 100px 128px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+   background: var(--BG-1, #292F36);
+}
+
+#blogs-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+#blogs-header h1 {
+   color: var(--Brand-1, #12F7D6);
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 72px;
+   text-transform: capitalize;
+}
+
+#blogs-header p {
+   color: var(--White, #FFF);
+   text-align: center;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   flex: 1 0 0;
+}
+
+.column-blogs {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+.blogs-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 64px;
+}
+
+/*Styling A Contact Me*/
+.contact-me {
+   display: flex;
+   padding: 64px 0px 16px 0px;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+   background-color: #1A1E23;
+}
+
+#contact-me-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+#contact-me-header h1 {
+   color: #12F7D6;
+   font-family: Ubuntu;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 400;
+   text-transform: capitalize;
+}
+
+#send-message {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+#send-message h1 {
+   display: flex;
+   padding: 16px 40px;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 32px 0px;
+   border: 2px solid var(--Brand-1, #12F7D6);
+   color: #12F7D6;
+}
+
+#name,
+#email,
+#message {
+   color: var(--Brand-1, #12F7D6);
+   /* Para-U */
+   font-family: Ubuntu;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 18px;
+   /* 112.5% */
+}
+
+#send-message input {
+   background-color: #1A1E23;
+   border: #1A1E23;
+   border-bottom: 2px solid #12F7D6;
+}
+
+#form-info {
+   display: flex;
+   padding: 0px 40px;
+   flex-direction: column;
+   align-items: center;
+   gap: 64px;
+   align-self: stretch;
+}
+
+
+.contact-me-container button {
+   display: flex;
+   padding: 16px 32px;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   border-radius: 32px;
+   background: var(--Brand-1, #12F7D6);
 }
 
 /* Styling a Footer */
@@ -507,34 +803,17 @@ footer {
    align-items: flex-start;
    gap: 24px;
    align-self: stretch;
+   background-color: #1A1E23;
+   padding-bottom: 50px;
 }
 
 .container-footer {
    display: flex;
    padding: 0 24px;
-   flex-direction: column;
    align-items: center;
    gap: 24px;
    align-self: stretch;
-}
-
-.social-medias-footer {
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 32px;
-}
-
-footer li {
-   width: 32px;
-   height: 32px;
-   list-style: none;
-   background-color: #98FAEC;
-   border-radius: 48px;
-   display: flex;
-   padding: 8px;
-   justify-content: center;
-   align-items: flex-start;
+   margin: 0 200px;
 }
 
 .copyright {
@@ -553,24 +832,22 @@ footer li {
    gap: 32px;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 600px) {
 
-   header,
-   nav {
-      text-align: center;
-   }
-
-   #heading-nav li {
-      display: block;
-      margin-bottom: 10px;
-   }
+.social-medias-footer {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 32px;
 }
 
-/* Tablet Styles */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-   #heading-nav li {
-      display: inline;
-      margin-right: 20px;
-   }
+footer li {
+   width: 32px;
+   height: 32px;
+   list-style: none;
+   background-color: #98FAEC;
+   border-radius: 48px;
+   display: flex;
+   padding: 8px;
+   justify-content: center;
+   align-items: flex-start;
 }
