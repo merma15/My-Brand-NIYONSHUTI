@@ -518,6 +518,7 @@ input[type="button"] {
    align-items: center;
    gap: 16px;
    align-self: stretch;
+   padding-top: 50px;
 }
 
 #skills-header h1 {
@@ -735,12 +736,13 @@ input[type="button"] {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 64px;
+   gap: 10px;
    align-self: stretch;
+   padding-top: 64px;
 }
 
 #blogs-header h1 {
-   color: var(--Brand-1, #12F7D6);
+   color: #12F7D6;
    font-size: 64px;
    font-style: normal;
    font-weight: 400;
@@ -749,18 +751,19 @@ input[type="button"] {
 }
 
 #blogs-header p {
-   color: var(--White, #FFF);
+   color: #FFF;
    text-align: center;
-   font-size: 16px;
+   font-size: 20px;
    font-style: normal;
    font-weight: 400;
    line-height: 20px;
-   flex: 1 0 0;
+   text-transform: capitalize;
+   padding-bottom: 64px;
 }
 
 .column-blogs {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    justify-content: center;
    align-items: center;
    gap: 64px;
@@ -783,6 +786,12 @@ input[type="button"] {
    align-items: center;
    gap: 64px;
 
+}
+
+#blog-content h1,
+h3 {
+   padding: 30px 0;
+   color: #12F7D6;
 }
 
 #blog-picture img {
@@ -823,8 +832,9 @@ input[type="button"] {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 64px;
+   gap: 10px;
    align-self: stretch;
+   padding: 50px;
 }
 
 #contact-me-header h1 {
@@ -857,14 +867,11 @@ input[type="button"] {
 #name,
 #email,
 #message {
-   color: var(--Brand-1, #12F7D6);
-   /* Para-U */
-   font-family: Ubuntu;
+   color: #12F7D6;
    font-size: 16px;
    font-style: normal;
    font-weight: 300;
    line-height: 18px;
-   /* 112.5% */
 }
 
 #send-message input {
@@ -890,7 +897,7 @@ input[type="button"] {
    align-items: center;
    gap: 20px;
    border-radius: 32px;
-   background: var(--Brand-1, #12F7D6);
+   background: #12F7D6;
 }
 
 /* Styling a Footer */
@@ -901,7 +908,7 @@ footer {
    gap: 24px;
    align-self: stretch;
    background-color: #1A1E23;
-   padding-bottom: 50px;
+   padding: 64px 15px;
 }
 
 .container-footer {
